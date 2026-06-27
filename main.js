@@ -369,20 +369,20 @@ function startSystem() {
 
       if (avgDist < 0.25) {
         state = "TREE";
-        statusDiv.innerText = "✊ Thu Cây Thông";
+        statusDiv.innerText = "✊";
         statusDiv.style.color = "#FFD700";
       } else if (pinchDist < 0.05) {
         state = "PHOTO";
-        statusDiv.innerText = "👌 Xem Ảnh";
+        statusDiv.innerText = "👌";
         statusDiv.style.color = "#00FFFF";
       } else {
         state = "EXPLODE";
-        statusDiv.innerText = "🖐 Bung Quà & Ảnh";
+        statusDiv.innerText = "🖐";
         statusDiv.style.color = "#FFA500";
       }
     } else {
       state = "TREE";
-      statusDiv.innerText = "🎄 Giang Sinh An Lanh 🎄";
+      statusDiv.innerText = "Cay thong cua hai lam";
       statusDiv.style.color = "#FFF";
     }
   });
