@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Gifts & Lights</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="error-log"></div>
+
+  <div id="ui-layer">
+    <div id="status" class="badge">🎄 Giang Sinh An Lanh 🎄</div>
+    <div class="guide">
+      🖐 <b>Xòe:</b> Bung Quà & Đèn &nbsp;|&nbsp; 👌 <b>Pinch:</b> Xem ảnh &nbsp;|&nbsp; ✊ <b>Nắm:</b> Thu cây
+    </div>
+    <button id="btnStart" onclick="startSystem()">BẮT ĐẦU</button>
+  </div>
+
+  <div id="canvas-container"></div>
+  <video class="input_video" style="display:none"></video>
+  <canvas id="camera-preview"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>
